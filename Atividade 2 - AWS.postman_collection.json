@@ -1,0 +1,329 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Atividade 2 - AWS",
+		"_postman_id": "3e7593cd-70ee-669d-24d6-3624409f310f",
+		"description": "Entendimento prático sobre APIs REST, envolvendo documentação, ferramentas e requisições.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API CNAE Classe Por ID",
+			"request": {
+				"url": "https://servicodados.ibge.gov.br/api/v2/cnae/classes/62040",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "API Localidades Municipios por UF",
+			"request": {
+				"url": "https://servicodados.ibge.gov.br/api/v1/localidades/estados/mg/municipios",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "API Localidades Distritos por Municipio",
+			"request": {
+				"url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/3170107/distritos",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "API CNPJ",
+			"request": {
+				"url": "http://www.receitaws.com.br/v1/cnpj/31882474000138",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "API Coronavirus despesas",
+			"request": {
+				"url": "https://api.portaldatransparencia.gov.br/v2/api-docs/api-de-dados/coronavirus/movimento-liquido-despesa",
+				"method": "GET",
+				"header": [
+					{
+						"key": "acao",
+						"value": "",
+						"description": "Ação (código SIAFI)",
+						"disabled": true
+					},
+					{
+						"key": "chave-api-dados",
+						"value": "",
+						"description": "Chave para acessar à API. Para obter a chave acesse http://www.portaldatransparencia.gov.br/api-de-dados/cadastrar-email *required"
+					},
+					{
+						"key": "elementoDespesa",
+						"value": "",
+						"description": "Elemento Despesa (código SIAFI)",
+						"disabled": true
+					},
+					{
+						"key": "funcao",
+						"value": "",
+						"description": "Função (código SIAFI)",
+						"disabled": true
+					},
+					{
+						"key": "grupoDespesa",
+						"value": "",
+						"description": "Grupo Despesa",
+						"disabled": true
+					},
+					{
+						"key": "idPlanoOrcamentario",
+						"value": "",
+						"description": "Id Plano orçamentário",
+						"disabled": true
+					},
+					{
+						"key": "mesAnoLancamento",
+						"value": "",
+						"description": "Mês e Ano de lançamento (AAAAMM) *Require"
+					},
+					{
+						"key": "modalidadeAplicacao",
+						"value": "",
+						"description": "Modalidade de Aplicação (código SIAFI)",
+						"disabled": true
+					},
+					{
+						"key": "pagina",
+						"value": "",
+						"description": "Página consultada Default value : 1 *Require"
+					},
+					{
+						"key": "programa",
+						"value": "",
+						"description": "Programa (código SIAFI)",
+						"disabled": true
+					},
+					{
+						"key": "subfuncao",
+						"value": "",
+						"description": "Subfunção (código SIAFI)",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "API Coronavirus transferencias",
+			"request": {
+				"url": "https://api.portaldatransparencia.gov.br/v2/api-docs/api-de-dados/coronavirus/transferencias",
+				"method": "GET",
+				"header": [
+					{
+						"key": "chave-api-dados",
+						"value": "",
+						"description": "Chave para acessar à API. Para obter a chave acesse http://www.portaldatransparencia.gov.br/api-de-dados/cadastrar-email *required"
+					},
+					{
+						"key": "codigoIbge",
+						"value": "",
+						"description": "Município",
+						"disabled": true
+					},
+					{
+						"key": "codigoOrgao",
+						"value": "",
+						"description": "Órgão (código SIAFI)",
+						"disabled": true
+					},
+					{
+						"key": "mesAno",
+						"value": "",
+						"description": "Mês e Ano (AAAAMM) * Require"
+					},
+					{
+						"key": "pagina",
+						"value": "",
+						"description": "Página consultada Default value : 1 *Require"
+					},
+					{
+						"key": "tipoTransferencia",
+						"value": "",
+						"description": "https://api.portaldatransparencia.gov.br/swagger-ui.html#!/Despesas32P250blicas/listaTipoTransferenciaUsingGET",
+						"disabled": true
+					},
+					{
+						"key": "uf",
+						"value": "",
+						"description": "Sigla UF",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "API Publicações Diario OABRS",
+			"request": {
+				"url": "https://wsoab.oabrs.org.b/wsoabexterno/Service.asmx/wsNotasExpedienteAdvogadoTribunal",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "numeroOAB",
+							"value": "63790",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "idTribunal",
+							"value": "5",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "dtInicial",
+							"value": "2021-01-01",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "dtFinal",
+							"value": "2022-02-28",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "chave",
+							"value": "",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Bonnjur Authentication",
+			"request": {
+				"url": "http://www.bonnjur.com.br/WebServiceBonnjurDEV/Api/V1/LoginBonnjur",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NumOAB\" : \"90882\",\r\n    \"cpf\" : \"09351179974\",\r\n    \"EstadoOAB\" : \"PR\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Bonnjur getPublicacoes",
+			"request": {
+				"url": {
+					"raw": "http://www.bonnjur.com.br/WebServiceBonnjurDEV/Api/V1/PublicacoesPorUsuario?token=3205c1e0a2125a03&islida=false&pagina=0",
+					"protocol": "http",
+					"host": [
+						"www",
+						"bonnjur",
+						"com",
+						"br"
+					],
+					"path": [
+						"WebServiceBonnjurDEV",
+						"Api",
+						"V1",
+						"PublicacoesPorUsuario"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "3205c1e0a2125a03",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "islida",
+							"value": "false",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pagina",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Bonnjur Confirm Leitura",
+			"request": {
+				"url": "http://www.bonnjur.com.br/WebServiceBonnjurDEV/Api/V1/PublicacoesPorUsuario",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Length",
+						"value": "",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\" : \"\",\r\n    \"idProtocolo\" : \"\",\r\n    \"idNoticia\" : \"\",\r\n    \"EnderecoIP\" : \"192.168.1.255\",\r\n    \"FlgSiteAPP\" : 1\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
