@@ -1,1 +1,3 @@
 # atividade-postman
+
+Utilizado Postman
